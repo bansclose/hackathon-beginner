@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hackathon-starter-backend
+spec:
+  replicas: 3 # Số lượng pod
+  selector:
+    matchLabels:
+      app: hackathon-starter-backend
+  template:
+    metadata:
+      labels:
+        app: hackathon-starter-backend
+    spec:
+      containers:
+        - name: hackathon-starter-backend
+          image: dockerfile-backend:latest # image backend 
+          ports:
+            - containerPort: 8080 # Port của ứng dụng backend
+          env:
+            - name: MONGODB_URI
+              value: <mongodb://mongo:27017/mydatabase> # URI kết nối MongoDB
