@@ -83,7 +83,7 @@ Nộp bài dưới dạng một repository Git chứa:
 1. Tất cả script và cấu hình đã đề cập ở trên.
     - Đẩy code lên git: + Tạo new repo, cd Download/myproject, do có sẵn git khi git clone nên cần phải xóa git hiện tại.
                         + git remote -v (kiểm tra), git remote remove origin (xóa), git init (khởi tạo)
-                        + git remote add origin https://github.com/your-username/myproject.git
+                        + git remote add origin https://github.com/bansclose/myproject.git
                         + git add .
                         + git commit -m "Initial commit"
                         + git branch -M main
