@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hackathon-starter-frontend
+spec:
+  replicas: 3 # Số lượng pod
+  selector:
+    matchLabels:
+      app: hackathon-starter-frontend
+  template:
+    metadata:
+      labels:
+        app: hackathon-starter-frontend
+    spec:
+      containers:
+        - name: hackathon-starter-frontend
+          image: dockerfile-frontend:latest # image frontend 
+          ports:
+            - containerPort: 3000 # Port của ứng dụng frontend
+          env:
+            - name: REACT_APP_BACKEND_URL
+              value: http://hackathon-starter-backend:8080 # Service backend

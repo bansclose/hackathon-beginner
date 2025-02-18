@@ -1,0 +1,23 @@
+# Sử dụng Node.js phiên bản mới nhất
+FROM node:22
+
+# Thiết lập thư mục làm việc
+WORKDIR /app
+
+# Sao chép package.json và package-lock.json để cài đặt dependencies trước
+COPY package*.json ./
+
+# Tạo thư mục public/css để tránh lỗi
+RUN mkdir -p public/css
+
+# Cài đặt các dependencies
+RUN npm install
+
+# Sao chép toàn bộ mã nguồn vào container
+COPY . .
+
+# Bật cổng cho backend
+EXPOSE 3000
+
+# Chạy ứng dụng
+CMD ["npm", "start"]

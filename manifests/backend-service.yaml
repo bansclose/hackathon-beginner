@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hackathon-starter-backend
+spec:
+  selector:
+    app: hackathon-starter-backend
+  ports:
+    - protocol: TCP
+      port: 8080 # Port service
+      targetPort: 8080 # Port container

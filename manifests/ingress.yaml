@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: hackathon-starter-ingress
+spec:
+  rules:
+    - host: <your_domain> # Thay thế bằng domain của bạn
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: hackathon-starter-frontend
+                port:
+                  number: 3000
