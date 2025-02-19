@@ -9,6 +9,6 @@ kubectl apply -f backend-service.yaml
 
 
 
-# kubectl apply -f ingress.yaml
+kubectl apply -f ingress.yaml
 
 echo "Triển khai thành công!"

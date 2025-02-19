@@ -4,7 +4,7 @@ metadata:
   name: hackathon-starter-ingress
 spec:
   rules:
-    - host: <your_domain> # Thay thế bằng domain của bạn
+    - host: localhost # Thay thế bằng domain của bạn
       http:
         paths:
           - path: /
