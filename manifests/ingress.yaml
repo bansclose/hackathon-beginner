@@ -11,6 +11,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: hackathon-starter-frontend
+                name: hackathon-starter-backend
                 port:
                   number: 3000
