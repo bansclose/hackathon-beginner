@@ -19,4 +19,4 @@ spec:
             - containerPort: 8080 # Port của ứng dụng backend
           env:
             - name: MONGODB_URI
-              value: <mongodb://mongo:27017/mydatabase> # URI kết nối MongoDB
+              value: mongodb://mongo:27017/mydatabase # URI kết nối MongoDB
