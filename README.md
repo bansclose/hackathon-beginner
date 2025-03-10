@@ -78,8 +78,6 @@ trungnt@trungnt-devops:~/Downloads/myproject$
      kubectl apply -f ingress.yaml
 echo "Triển khai thành công!"
   
-  ## Nộp bài
-Nộp bài dưới dạng một repository Git chứa:  
 1. Tất cả script và cấu hình đã đề cập ở trên.
     - Đẩy code lên git: + Tạo new repo, cd Download/myproject, do có sẵn git khi git clone nên cần phải xóa git hiện tại.
                         + git remote -v (kiểm tra), git remote remove origin (xóa), git init (khởi tạo)
