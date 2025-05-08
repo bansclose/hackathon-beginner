@@ -76,4 +76,4 @@
             - `git commit -m "Initial commit"`
             - `git branch -M main`
             - `git push -u origin main`
-- Tôi vừa mới update
+- Tôi vừa mới update them, toi moi them thong tin
